@@ -83,6 +83,8 @@ function endGame() {
     }
 
     endMessageElem.textContent = message;
+
+    document.getElementById("quiz-heading").style.display = "none";
     
     document.getElementById("end-game").classList.remove("hidden");
     document.getElementById("in-game").classList.add("hidden");
