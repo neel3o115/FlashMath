@@ -467,14 +467,23 @@ header{
     background-color: #6285e7;
   }
   
-  #final-score {
+  #final-score{
     font-family: "Rubik", serif;
     font-size: 24px;
     font-weight: bold;
     color: #333;
     margin-top: 20px;
   }
-  
+
+  #end-message{
+    font-family: "Rubik", serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
   .hidden {
     display: none;
   }
