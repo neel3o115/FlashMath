@@ -63,11 +63,7 @@
 
   <main class="main-content">
     
-    <header class="header">
-        <h1>FlashMath | calculus</h1>
-      </header>
-      <div style="margin-top: 80px;"></div>
-
+    <h1>calculus</h1>
     <h2 id="one">derivatives</h2>
     <section class="flashcard" style="grid-template-columns: repeat(6, 1fr); width: 98%;">
       <div class="card" style="aspect-ratio: 3/1;">
@@ -286,7 +282,7 @@
       <div class="card" style="aspect-ratio: 9/1;">
         <div class="card__inner">
           <div class="card__face card__front">
-            first fundamental theorem of calculus =
+            First Fundamental Theorem of Calculus =
           </div>
           <div class="card__face card__back">
             F'(x) = f(x)
@@ -297,7 +293,7 @@
       <div class="card" style="aspect-ratio: 9/1;">
         <div class="card__inner">
           <div class="card__face card__front">
-            rolle's theorem =
+            Rolle's Theorem =
           </div>
           <div class="card__face card__back">
             f'(c) = 0
@@ -308,7 +304,7 @@
       <div class="card" style="aspect-ratio: 9/1;">
         <div class="card__inner">
           <div class="card__face card__front">
-            second fundamental theorem of calculus =
+            Second Fundamental Theorem of Calculus =
           </div>
           <div class="card__face card__back">
             ∫ [a, b] f(x) dx = F(b) - F(a)
@@ -319,7 +315,7 @@
       <div class="card" style="aspect-ratio: 9/1;">
         <div class="card__inner">
           <div class="card__face card__front">
-            taylor series =
+            Taylor Series =
           </div>
           <div class="card__face card__back">
             f(x) = Σ (fⁿ(a)/n!) (x - a)ⁿ
@@ -331,7 +327,7 @@
       <div class="card" style="aspect-ratio: 9/1;">
         <div class="card__inner">
           <div class="card__face card__front">
-            mean value theorem (MVT) =
+            Mean Value Theorem (MVT) =
           </div>
           <div class="card__face card__back">
             f'(c) = [f(b) - f(a)]/(b - a)
@@ -357,11 +353,11 @@
       <div id="start-game">
         <button id="start-btn">Start Quiz</button>
     </div>
-  
+    
     <div id="in-game" class="hidden quiz-container">
-      <span id="Qno">0</span id="dot"><span>. </span><span id="question"></span>
-      <br>
-      <br>
+        <span id="Qno">0</span id="dot"><span>. </span><span id="question"></span>
+        <br>
+        <br>
         <div id="options">
             <button class="answer-btn"></button>
             <button class="answer-btn"></button>
@@ -371,41 +367,116 @@
         <p class="jeevan">score: <span id="score">0</span></p>
         <button id="next-question-btn" class="hidden">Next Question</button>
     </div>
-  
+    
     <div id="end-game" class="hidden">
         <p id="final-score"></p>
     </div>
-    </section>
-
+    
     <script id="question-bank" type="application/json">
-      [
+    [
       {
-          "question": "Find \\(\\frac{d}{dx}(x^2 + 3x + 5)\\).",
-          "correctAnswer": "\\(2x + 3\\)",
-          "incorrectAnswers": ["\\(2x\\)", "\\(3x + 5\\)", "\\(x^2 + 3\\)"]
+        "question": "Find \\(\\frac{d}{dx}(x^2 + 3x + 5)\\).",
+        "correctAnswer": "\\(2x + 3\\)",
+        "incorrectAnswers": ["\\(2x\\)", "\\(3x + 5\\)", "\\(x^2 + 3\\)"]
       },
       {
-          "question": "Evaluate \\(\\int (3x^2 + 2x) \\, dx\\).",
-          "correctAnswer": "\\(x^3 + x^2 + C\\)",
-          "incorrectAnswers": ["\\(x^3 + 2x + C\\)", "\\(3x^3 + 2x^2 + C\\)", "\\(3x^2 + 2x + C\\)"]
+        "question": "Evaluate \\(\\int (3x^2 + 2x) \\, dx\\).",
+        "correctAnswer": "\\(x^3 + x^2 + C\\)",
+        "incorrectAnswers": ["\\(x^3 + 2x + C\\)", "\\(3x^3 + 2x^2 + C\\)", "\\(3x^2 + 2x + C\\)"]
       },
       {
-          "question": "What is \\(\\lim_{x \\to 2} (x^2 - 4)\\)?",
-          "correctAnswer": "0",
-          "incorrectAnswers": ["4", "8", "-4"]
+        "question": "What is \\(\\lim_{x \\to 2} (x^2 - 4)\\)?",
+        "correctAnswer": "0",
+        "incorrectAnswers": ["4", "8", "-4"]
       },
       {
-          "question": "Find \\(\\frac{d}{dx}(\\sin(x))\\).",
-          "correctAnswer": "\\(\\cos(x)\\)",
-          "incorrectAnswers": ["\\(-\\cos(x)\\)", "\\(\\sin(x)\\)", "\\(-\\sin(x)\\)"]
+        "question": "Find \\(\\frac{d}{dx}(\\sin(x))\\).",
+        "correctAnswer": "\\(\\cos(x)\\)",
+        "incorrectAnswers": ["\\(-\\cos(x)\\)", "\\(\\sin(x)\\)", "\\(-\\sin(x)\\)"]
       },
       {
-          "question": "Evaluate \\(\\int \\cos(x) \\, dx\\).",
-          "correctAnswer": "\\(\\sin(x) + C\\)",
-          "incorrectAnswers": ["\\(-\\sin(x) + C\\)", "\\(\\cos(x) + C\\)", "\\(-\\cos(x) + C\\)"]
+        "question": "Evaluate \\(\\int \\cos(x) \\, dx\\).",
+        "correctAnswer": "\\(\\sin(x) + C\\)",
+        "incorrectAnswers": ["\\(-\\sin(x) + C\\)", "\\(\\cos(x) + C\\)", "\\(-\\cos(x) + C\\)"]
+      },
+      {
+        "question": "Evaluate \\(\\int_0^1 (3x^2 + 2x) \\, dx\\).",
+        "correctAnswer": "\\(\\frac{10}{3}\\)",
+        "incorrectAnswers": ["\\(2\\)", "\\(4\\)", "\\(1\\)"]
+      },
+      {
+        "question": "Find the derivative of \\(f(x) = x^3 + 4x^2 - 5x + 1\\).",
+        "correctAnswer": "\\(3x^2 + 8x - 5\\)",
+        "incorrectAnswers": ["\\(3x^2 + 4x + 1\\)", "\\(2x^2 + 8x - 5\\)", "\\(3x^2 - 4x + 1\\)"]
+      },
+      {
+        "question": "What is the limit \\(\\lim_{x \\to 0} \\frac{\\sin(x)}{x}\\)?",
+        "correctAnswer": "1",
+        "incorrectAnswers": ["0", "undefined", "2"]
+      },
+      {
+        "question": "Find the second derivative of \\(f(x) = x^2 + 2x + 1\\).",
+        "correctAnswer": "\\(2\\)",
+        "incorrectAnswers": ["\\(1\\)", "\\(4\\)", "\\(0\\)"]
+      },
+      {
+        "question": "Evaluate \\(\\int e^x \\, dx\\).",
+        "correctAnswer": "\\(e^x + C\\)",
+        "incorrectAnswers": ["\\(e^x\\)", "\\(xe^x + C\\)", "\\(e^{2x} + C\\)"]
+      },
+      {
+        "question": "Find \\(\\frac{d}{dx}(e^x)\\).",
+        "correctAnswer": "\\(e^x\\)",
+        "incorrectAnswers": ["\\(x^e\\)", "\\(1\\)", "\\(e\\)"]
+      },
+      {
+        "question": "What is \\(\\int_0^{\\infty} e^{-x} \\, dx\\)?",
+        "correctAnswer": "\\(1\\)",
+        "incorrectAnswers": ["0", "\\(\\infty\\)", "\\(e^{-1}\\)"]
+      },
+      {
+        "question": "Find \\(\\frac{d}{dx}(\\ln(x))\\).",
+        "correctAnswer": "\\(\\frac{1}{x}\\)",
+        "incorrectAnswers": ["\\(x\\)", "\\(\\ln(x)\\)", "\\(1\\)"]
+      },
+      {
+        "question": "Evaluate \\(\\int_1^2 x^3 \\, dx\\).",
+        "correctAnswer": "\\(\\frac{15}{4}\\)",
+        "incorrectAnswers": ["\\(6\\)", "\\(5\\)", "\\(10\\)"]
+      },
+      {
+        "question": "Find the derivative of \\(f(x) = \\ln(x^2 + 1)\\).",
+        "correctAnswer": "\\(\\frac{2x}{x^2 + 1}\\)",
+        "incorrectAnswers": ["\\(\\frac{2x}{x+1}\\)", "\\(\\frac{x}{x^2 + 1}\\)", "\\(\\frac{1}{x^2 + 1}\\)"]
+      },
+      {
+        "question": "What is the integral of \\(\\sec^2(x)\\)?",
+        "correctAnswer": "\\(\\tan(x) + C\\)",
+        "incorrectAnswers": ["\\(\\sin(x) + C\\)", "\\(\\cos(x) + C\\)", "\\(\\ln(x) + C\\)"]
+      },
+      {
+        "question": "What is the limit of \\(\\frac{x^2 - 1}{x - 1}\\) as \\(x \\to 1\\)?",
+        "correctAnswer": "2",
+        "incorrectAnswers": ["1", "0", "undefined"]
+      },
+      {
+        "question": "Find \\(\\frac{d}{dx}(x^x)\\).",
+        "correctAnswer": "\\(x^x (1 + \\ln(x))\\)",
+        "incorrectAnswers": ["\\(x^x\\)", "\\(x^x (1 - \\ln(x))\\)", "\\(1\\)"]
+      },
+      {
+        "question": "Evaluate \\(\\int x^2 e^x \\, dx\\).",
+        "correctAnswer": "\\(x^2 e^x - 2x e^x + 2e^x + C\\)",
+        "incorrectAnswers": ["\\(x^2 e^x + 2x e^x + C\\)", "\\(x^2 e^x - x e^x + C\\)", "\\(x e^x + C\\)"]
+      },
+      {
+        "question": "Find the derivative of \\(f(x) = \\tan(x)\\).",
+        "correctAnswer": "\\(\\sec^2(x)\\)",
+        "incorrectAnswers": ["\\(\\sin(x)\\)", "\\(\\cos(x)\\)", "\\(\\sec(x)\\)"]
       }
-  ] 
+    ]
     </script>
+    
 
   </main>
 
