@@ -479,7 +479,7 @@ header{
     display: none;
   }
 
-  [id]::before {
+  [id]:not(#question,#score)::before {
     content: '';
     display: block;
     height: 120px; 
