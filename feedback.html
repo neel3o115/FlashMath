@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlashMath | feedback</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Doto:wght@100..900&family=DynaPuff:wght@400..700&family=Kablammo&family=Rubik:ital,wght@0,300..900;1,300..900&family=Share+Tech+Mono&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="index.html" class="navbar__link">
+          <i data-feather="home"></i>
+          <span>home</span>
+        </a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="algebra.html" class="navbar__link">
+          f(x)
+          <span>algebra</span>
+        </a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="geometry.html" class="navbar__link">
+            πr²
+          <span>geometry</span>
+        </a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="trigonometry.html" class="navbar__link">
+          sin θ
+          <span>trigonometry</span>
+        </a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="calculus.html" class="navbar__link">
+            df/dx
+          <span>calculus</span>
+        </a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="feedback.html" class="navbar__link">
+            <i data-feather="edit"></i> 
+          <span>send feedback</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <div class="rating-container">
+        <h1>we value your feedback!</h1>
+        <form action="https://formspree.io/f/mzzbqdoa" method="POST">
+            <div class="name-input">
+                <label for="name">your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+    
+            <div class="email-input">
+                <label for="mail">your email:</label>
+                <input type="email" id="mail" name="mail" placeholder="Enter your email" required>
+            </div>
+    
+            <p>how would you rate your overall experience?</p>
+            <div class="stars">
+                <input type="radio" name="rating" id="star1" value="5"><label for="star1"></label>
+                <input type="radio" name="rating" id="star2" value="4"><label for="star2"></label>
+                <input type="radio" name="rating" id="star3" value="3"><label for="star3"></label>
+                <input type="radio" name="rating" id="star4" value="2"><label for="star4"></label>
+                <input type="radio" name="rating" id="star5" value="1"><label for="star5"></label>
+            </div>
+    
+            <p>kindly take a moment to tell us what you think:</p>
+            <textarea name="feedback" rows="4" placeholder="Leave your comments here..." required></textarea>
+    
+            <button type="submit">submit Feedback</button>
+        </form>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
