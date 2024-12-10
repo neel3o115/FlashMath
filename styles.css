@@ -491,33 +491,15 @@ header{
     0% {
       color: inherit;
     }
-   10% {
-      color: rgb(64,111,243);
-    }
-    20% {
-      color: transparent;
-    }
-    30% {
-      color: rgb(64,111,243);
-    }
-    40% {
+    25% {
       color: transparent;
     }
     50% {
       color: rgb(64,111,243);
     }
-    60% {
+    75% {
       color: transparent;
     }
-    70% {
-      color: rgb(64,111,243);
-    }
-    80% {
-      color: transparent;
-    }
-    90% {
-      color: rgb(64,111,243);
-    }    
     100% {
         color: inherit;
     }
