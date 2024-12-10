@@ -478,3 +478,51 @@ header{
   .hidden {
     display: none;
   }
+
+  [id]::before {
+    content: '';
+    display: block;
+    height: 120px; 
+    margin-top: -120px; 
+    visibility: hidden;
+  }
+
+  @keyframes highlight {
+    0% {
+      color: inherit;
+    }
+   10% {
+      color: rgb(64,111,243);
+    }
+    20% {
+      color: transparent;
+    }
+    30% {
+      color: rgb(64,111,243);
+    }
+    40% {
+      color: transparent;
+    }
+    50% {
+      color: rgb(64,111,243);
+    }
+    60% {
+      color: transparent;
+    }
+    70% {
+      color: rgb(64,111,243);
+    }
+    80% {
+      color: transparent;
+    }
+    90% {
+      color: rgb(64,111,243);
+    }    
+    100% {
+        color: inherit;
+    }
+}
+
+h2:target {
+    animation: highlight 1.5s ease; 
+}
