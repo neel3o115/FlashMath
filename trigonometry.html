@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlashMath | trigonometry</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Doto:wght@100..900&family=DynaPuff:wght@400..700&family=Kablammo&family=Rubik:ital,wght@0,300..900;1,300..900&family=Share+Tech+Mono&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="index.html" class="navbar__link">
+          <i data-feather="home"></i>
+          <span>home</span>
+        </a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="algebra.html" class="navbar__link">
+          f(x)
+          <span>algebra</span>
+        </a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="geometry.html" class="navbar__link">
+            πr²
+          <span>geometry</span>
+        </a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="trigonometry.html" class="navbar__link">
+          sin θ
+          <span>trigonometry</span>
+        </a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="calculus.html" class="navbar__link">
+            df/dx
+          <span>calculus</span>
+        </a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="feedback.html" class="navbar__link">
+            <i data-feather="edit"></i> 
+          <span>send feedback</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+
+    <h1>trigonometry</h1>
+    <h2 id = "one">fundamental trigonometric identities</h2>
+    <section class="flashcard" style="grid-template-columns: repeat(6, 1fr); width: 98%;">
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sin²θ + cos²θ =
+          </div>
+          <div class="card__face card__back">
+            1
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            1 + tan²θ =
+          </div>
+          <div class="card__face card__back">
+            sec²θ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            1 + cot²θ =
+          </div>
+          <div class="card__face card__back">
+            csc²θ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sin(-θ) =
+          </div>
+          <div class="card__face card__back">
+            -sinθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            cos(-θ) =
+          </div>
+          <div class="card__face card__back">
+            cosθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            tan(-θ) =
+          </div>
+          <div class="card__face card__back">
+            -tanθ
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <br>
+
+    <h2 id = "two">reciprocal identities</h2>
+    <section class="flashcard" style="grid-template-columns: repeat(6, 1fr); width: 98%;">
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sinθ =
+          </div>
+          <div class="card__face card__back">
+            1/cscθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            cosθ =
+          </div>
+          <div class="card__face card__back">
+            1/secθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            tanθ =
+          </div>
+          <div class="card__face card__back">
+            sinθ/cosθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            cotθ =
+          </div>
+          <div class="card__face card__back">
+            cosθ/sinθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            secθ =
+          </div>
+          <div class="card__face card__back">
+            1/cosθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            cscθ =
+          </div>
+          <div class="card__face card__back">
+            1/sinθ
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <br>
+
+    <h2 id = "three">angle sum and difference identities</h2>
+    <section class="flashcard" style="grid-template-columns: repeat(6, 1fr); width: 98%;">
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sin(A ± B) =
+          </div>
+          <div class="card__face card__back">
+            sinAcosB ± cosAsinB
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            cos(A ± B) =
+          </div>
+          <div class="card__face card__back">
+            cosAcosB ∓ sinAsinB
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            tan(A ± B) =
+          </div>
+          <div class="card__face card__back">
+            (tanA ± tanB) / (1 ∓ tanAtanB)
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sin(2θ) =
+          </div>
+          <div class="card__face card__back">
+            2sinθcosθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            cos(2θ) =
+          </div>
+          <div class="card__face card__back">
+            cos²θ - sin²θ
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            tan(2θ) =
+          </div>
+          <div class="card__face card__back">
+            2tanθ / (1 - tan²θ)
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <br>
+
+    <h2 id = "four">product-to-sum identities</h2>
+    <section class="flashcard" style="grid-template-columns: repeat(6, 1fr); width: 98%;">
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sinAcosB =
+          </div>
+          <div class="card__face card__back">
+            1/2[sin(A + B) + sin(A - B)]
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            cosAcosB =
+          </div>
+          <div class="card__face card__back">
+            1/2[cos(A + B) + cos(A - B)]
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sinAsinB =
+          </div>
+          <div class="card__face card__back">
+            1/2[cos(A - B) - cos(A + B)]
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <br>
+
+    <h2 id = "five">sum-to-product identities</h2>
+    <section class="flashcard" style="grid-template-columns: repeat(6, 1fr); width: 98%;">
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sinA + sinB =
+          </div>
+          <div class="card__face card__back">
+            2sin[(A + B)/2]cos[(A - B)/2]
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            cosA + cosB =
+          </div>
+          <div class="card__face card__back">
+            2cos[(A + B)/2]cos[(A - B)/2]
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sinA - sinB =
+          </div>
+          <div class="card__face card__back">
+            2cos[(A + B)/2]sin[(A - B)/2]
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <br>
+
+    <h2 id = "six">half-angle identities</h2>
+    <section class="flashcard" style="grid-template-columns: repeat(6, 1fr); width: 98%;">
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sin²(θ/2) =
+          </div>
+          <div class="card__face card__back">
+            (1 - cosθ) / 2
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            cos²(θ/2) =
+          </div>
+          <div class="card__face card__back">
+            (1 + cosθ) / 2
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            tan²(θ/2) =
+          </div>
+          <div class="card__face card__back">
+            (1 - cosθ) / (1 + cosθ)
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sin(θ/2) =
+          </div>
+          <div class="card__face card__back">
+            ±√[(1 - cosθ) / 2]
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            cos(θ/2) =
+          </div>
+          <div class="card__face card__back">
+            ±√[(1 + cosθ) / 2]
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            tan(θ/2) =
+          </div>
+          <div class="card__face card__back">
+            sinθ / (1 + cosθ)
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <br>
+
+    <h2 id = "seven">triple angle identities</h2>
+    <section class="flashcard" style="grid-template-columns: repeat(6, 1fr); width: 98%;">
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sin(3θ) =
+          </div>
+          <div class="card__face card__back">
+            3sinθ - 4sin³θ
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            cos(3θ) =
+          </div>
+          <div class="card__face card__back">
+            4cos³θ - 3cosθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            tan(3θ) =
+          </div>
+          <div class="card__face card__back">
+            (3tanθ - tan³θ) / (1 - 3tan²θ)
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sin(3A) =
+          </div>
+          <div class="card__face card__back">
+            3sinA - 4sin³A
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            cos(3A) =
+          </div>
+          <div class="card__face card__back">
+            4cos³A - 3cosA
+          </div>
+        </div>
+      </div>
+
+      <div class="card merge" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            tan(3A) =
+          </div>
+          <div class="card__face card__back">
+            (3tanA - tan³A) / (1 - 3tan²A)
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <br>
+
+    <h2 id = "eight">even-odd identities</h2>
+    <section class="flashcard" style="grid-template-columns: repeat(6, 1fr); width: 98%;">
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sin(-θ) =
+          </div>
+          <div class="card__face card__back">
+            -sinθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            cos(-θ) =
+          </div>
+          <div class="card__face card__back">
+            cosθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            tan(-θ) =
+          </div>
+          <div class="card__face card__back">
+            -tanθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            cot(-θ) =
+          </div>
+          <div class="card__face card__back">
+            -cotθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sec(-θ) =
+          </div>
+          <div class="card__face card__back">
+            secθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            csc(-θ) =
+          </div>
+          <div class="card__face card__back">
+            -cscθ
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+
+    <h2 id = "nine">miscellaneous identities</h2>
+    <section class="flashcard" style="grid-template-columns: repeat(6, 1fr); width: 98%;">
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sin(π/2 - θ) =
+          </div>
+          <div class="card__face card__back">
+            cosθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            cos(π/2 - θ) =
+          </div>
+          <div class="card__face card__back">
+            sinθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            tan(π/2 - θ) =
+          </div>
+          <div class="card__face card__back">
+            cotθ
+          </div>
+        </div>
+      </div>
+      
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            cot(π/2 - θ) =
+          </div>
+          <div class="card__face card__back">
+            tanθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            sec(π/2 - θ) =
+          </div>
+          <div class="card__face card__back">
+            cscθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 3/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            csc(π/2 - θ) =
+          </div>
+          <div class="card__face card__back">
+            secθ
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <br>
+
+    <section class="flashcard" style="grid-template-columns: repeat(6, 1fr); width: 98%;">
+      
+    </section>
+    <br>
+
+    <section id="trigonometry-quiz">
+      <div id="start-game">
+        <button id="start-btn">Start Quiz</button>
+    </div>
+  
+    <div id="in-game" class="hidden quiz-container">
+      <span id="Qno">0</span id="dot"><span>. </span><span id="question"></span>
+      <br>
+      <br>
+        <div id="options">
+            <button class="answer-btn"></button>
+            <button class="answer-btn"></button>
+            <button class="answer-btn"></button>
+            <button class="answer-btn"></button>
+        </div>
+        <p class="jeevan">score: <span id="score">0</span></p>
+        <button id="next-question-btn" class="hidden">Next Question</button>
+    </div>
+  
+    <div id="end-game" class="hidden">
+        <p id="final-score"></p>
+    </div>
+    </section>
+
+    <script id="question-bank" type="application/json">
+      [
+          {
+              "question": "What is sin(30°)?",
+              "correctAnswer": "1/2",
+              "incorrectAnswers": ["√3/2", "√2/2", "1"]
+          },
+          {
+              "question": "Find cos(45°).",
+              "correctAnswer": "1/√2",
+              "incorrectAnswers": ["1/2", "√3/2", "1"]
+          },
+          {
+              "question": "Evaluate tan(60°).",
+              "correctAnswer": "√3",
+              "incorrectAnswers": ["1", "2", "1/√3"]
+          },
+          {
+              "question": "What is the value of sin(90°)?",
+              "correctAnswer": "1",
+              "incorrectAnswers": ["0", "1/2", "√2/2"]
+          },
+          {
+              "question": "Find the value of tan(45°).",
+              "correctAnswer": "1",
+              "incorrectAnswers": ["0", "1/√2", "√3"]
+          }
+      ]
+  
+    </script>
+    
+  </main>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace();
+
+    var cards = document.querySelectorAll('.card');
+
+    cards.forEach(function(card) {
+      card.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (card.classList.contains('card--flipped')) {
+          card.classList.add('card--unflip');
+          setTimeout(function () {
+            card.classList.remove('card--flipped', 'card--unflip');
+          }, 500);
+        } else {
+          card.classList.add("card--flipped");
+        }
+      });
+    });
+  </script>
+  <script src="quiz.js"></script>
+</body>
+</html>
