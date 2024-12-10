@@ -63,11 +63,7 @@
 
   <main class="main-content">
 
-    <header class="header">
-      <h1>FlashMath | algebra</h1>
-    </header>
-    <div style="margin-top: 80px;"></div>
-
+    <h1>algebra</h1>
     <h2 id = "one">algebraic identities</h2>
     <section class="flashcard">
       <div class="card" style="aspect-ratio: 6/1;">
@@ -340,7 +336,7 @@
   <div class="card" style="aspect-ratio: 4/1;">
     <div class="card__inner">
       <div class="card__face card__front">
-        quadratic formula
+        Quadratic Formula
       </div>
       <div class="card__face card__back">
         <span>x = <sup>-b ± √(b<sup>2</sup> - 4ac)</sup> / <sub>2a</sub></span>
@@ -468,12 +464,12 @@
     <div id="start-game">
       <button id="start-btn">Start Quiz</button>
   </div>
-
+  
   <div id="in-game" class="hidden quiz-container">
       <span id="Qno">0</span id="dot"><span>. </span><span id="question"></span>
       <br>
       <br>
-
+  
       <div id="options">
           <button class="answer-btn"></button>
           <button class="answer-btn"></button>
@@ -484,42 +480,106 @@
       <p class="jeevan">score: <span id="score">0</span></p>
       <button id="next-question-btn" class="hidden">Next Question</button>
   </div>
-
+  
   <div id="end-game" class="hidden">
       <p id="final-score"></p>
   </div>
   </section>
   </main>
   <script id="question-bank" type="application/json">
-    [
-    {
-        "question": "Solve for x : \\(3x + 5 = 20\\).",
-        "correctAnswer": "5",
-        "incorrectAnswers": ["3", "4", "6"]
-    },
-    {
-        "question": "Simplify: \\(4x^2 + 3x - 2x^2 + 5x\\).",
-        "correctAnswer": "\\(2x^2 + 8x\\)",
-        "incorrectAnswers": ["\\(6x^2 + 8x\\)", "\\(4x^2 + 8x\\)", "\\(2x^2 + 3x\\)"]
-    },
-    {
-        "question": "Solve for y : \\(2y - 4 = 10\\).",
-        "correctAnswer": "7",
-        "incorrectAnswers": ["6", "5", "8"]
-    },
-    {
-        "question": "Factor: \\(x^2 + 5x + 6\\).",
-        "correctAnswer": "\\( (x + 2)(x + 3) \\)",
-        "incorrectAnswers": ["\\( (x + 1)(x + 6) \\)", "\\( (x + 3)(x + 2) \\)", "\\( (x + 4)(x + 2) \\)"]
-    },
-    {
-        "question": "Solve the system of equations: \\(x + y = 10\\) and \\(2x - y = 3\\).",
-        "correctAnswer": "\\(x = 4, y = 6\\)",
-        "incorrectAnswers": ["\\(x = 3, y = 7\\)", "\\(x = 5, y = 5\\)", "\\(x = 6, y = 4\\)"]
-    }
-]
-
-  </script>
+  [
+      {
+          "question": "Solve for x: \\(3x + 5 = 20\\).",
+          "correctAnswer": "5",
+          "incorrectAnswers": ["3", "4", "6"]
+      },
+      {
+          "question": "Simplify: \\(4x^2 + 3x - 2x^2 + 5x\\).",
+          "correctAnswer": "\\(2x^2 + 8x\\)",
+          "incorrectAnswers": ["\\(6x^2 + 8x\\)", "\\(4x^2 + 8x\\)", "\\(2x^2 + 3x\\)"]
+      },
+      {
+          "question": "Solve for y: \\(2y - 4 = 10\\).",
+          "correctAnswer": "7",
+          "incorrectAnswers": ["6", "5", "8"]
+      },
+      {
+          "question": "Factor: \\(x^2 + 5x + 6\\).",
+          "correctAnswer": "\\( (x + 2)(x + 3) \\)",
+          "incorrectAnswers": ["\\( (x + 1)(x + 6) \\)", "\\( (x + 3)(x + 2) \\)", "\\( (x + 4)(x + 2) \\)"]
+      },
+      {
+          "question": "Solve the system of equations: \\(x + y = 10\\) and \\(2x - y = 3\\).",
+          "correctAnswer": "\\(x = 4, y = 6\\)",
+          "incorrectAnswers": ["\\(x = 3, y = 7\\)", "\\(x = 5, y = 5\\)", "\\(x = 6, y = 4\\)"]
+      },
+      {
+          "question": "Find the value of \\(x\\): \\(2x + 7 = 19\\).",
+          "correctAnswer": "6",
+          "incorrectAnswers": ["5", "7", "8"]
+      },
+      {
+          "question": "Simplify: \\(\\frac{3x^2 - 2x}{x}\\).",
+          "correctAnswer": "\\(3x - 2\\)",
+          "incorrectAnswers": ["\\(3x + 2\\)", "\\(2x - 3\\)", "\\(3x^2 - 2\\)"]
+      },
+      {
+          "question": "Factor: \\(x^2 - 16\\).",
+          "correctAnswer": "\\((x + 4)(x - 4)\\)",
+          "incorrectAnswers": ["\\((x - 8)(x + 2)\\)", "\\((x + 4)(x + 4)\\)", "\\((x - 2)(x + 8)\\)"]
+      },
+      {
+          "question": "Solve for x: \\(x^2 - 4 = 0\\).",
+          "correctAnswer": "\\(x = 2, -2\\)",
+          "incorrectAnswers": ["\\(x = 1, -1\\)", "\\(x = 4, -4\\)", "\\(x = 0\\)"]
+      },
+      {
+          "question": "Solve for x: \\(3(x + 2) = 12\\).",
+          "correctAnswer": "4",
+          "incorrectAnswers": ["2", "5", "3"]
+      },
+      {
+          "question": "Solve for x: \\(4x - 3 = 5\\).",
+          "correctAnswer": "\\(x = 2\\)",
+          "incorrectAnswers": ["1", "3", "0"]
+      },
+      {
+          "question": "Simplify: \\(\\frac{4x^3 + 2x^2}{2x}\\).",
+          "correctAnswer": "\\(2x^2 + x\\)",
+          "incorrectAnswers": ["\\(2x^3 + x\\)", "\\(2x^3 + 2x^2\\)", "\\(2x^3 + x^2\\)"]
+      },
+      {
+          "question": "Factor: \\(x^2 + 6x + 9\\).",
+          "correctAnswer": "\\((x + 3)^2\\)",
+          "incorrectAnswers": ["\\((x + 1)(x + 9)\\)", "\\((x + 6)(x + 3)\\)", "\\((x + 5)(x + 4)\\)"]
+      },
+      {
+          "question": "Find the solution to the system of equations: \\(2x + y = 8\\) and \\(x - y = 2\\).",
+          "correctAnswer": "\\(x = 5, y = -2\\)",
+          "incorrectAnswers": ["\\(x = 3, y = 4\\)", "\\(x = 4, y = 2\\)", "\\(x = 6, y = -3\\)"]
+      },
+      {
+          "question": "Solve the equation: \\(x^2 + 6x + 9 = 0\\).",
+          "correctAnswer": "\\(x = -3\\)",
+          "incorrectAnswers": ["\\(x = 3\\)", "\\(x = -2\\)", "\\(x = 1\\)"]
+      },
+      {
+          "question": "Simplify: \\(5x - 2x + 4x^2\\).",
+          "correctAnswer": "\\(4x^2 + 3x\\)",
+          "incorrectAnswers": ["\\(3x^2 + 2x\\)", "\\(4x^2 + 2x\\)", "\\(4x^2 + 5x\\)"]
+      },
+      {
+          "question": "Find the value of x: \\(6x - 3 = 18\\).",
+          "correctAnswer": "3",
+          "incorrectAnswers": ["2", "4", "5"]
+      },
+      {
+          "question": "Solve for x: \\(5x + 2 = 3x + 10\\).",
+          "correctAnswer": "4",
+          "incorrectAnswers": ["2", "6", "5"]
+      }
+  ]
+  </script>  
   </main>
 
   <script src="https://unpkg.com/feather-icons"></script>
