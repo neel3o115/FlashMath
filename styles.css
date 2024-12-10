@@ -61,6 +61,18 @@ img#click {
   transition: filter 0.5s ease;
 }
 
+header{
+  position: fixed;
+  top: 0;
+  margin-left: -120px;
+  padding-left: 120px;
+  width: 100%;
+  background-color: rgb(234, 238, 246, 0.6);
+  z-index: 1;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
 :root {
     --border-radius: 10px;
     --spacer: 1rem;
