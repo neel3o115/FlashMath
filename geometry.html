@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlashMath | geometry</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Doto:wght@100..900&family=DynaPuff:wght@400..700&family=Kablammo&family=Rubik:ital,wght@0,300..900;1,300..900&family=Share+Tech+Mono&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="index.html" class="navbar__link">
+          <i data-feather="home"></i>
+          <span>home</span>
+        </a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="algebra.html" class="navbar__link">
+          f(x)
+          <span>algebra</span>
+        </a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="geometry.html" class="navbar__link">
+            πr²
+          <span>geometry</span>
+        </a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="trigonometry.html" class="navbar__link">
+          sin θ
+          <span>trigonometry</span>
+        </a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="calculus.html" class="navbar__link">
+            df/dx
+          <span>calculus</span>
+        </a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="feedback.html" class="navbar__link">
+            <i data-feather="edit"></i> 
+          <span>send feedback</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <h1>geometry</h1>
+    <h2 id = "one">triangle properties</h2>
+    <section class="flashcard" style="grid-template-columns: repeat(3, 1fr); width: 98%;">
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Sum of interior angles =
+          </div>
+          <div class="card__face card__back">
+            180°
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Sum of exterior angles =
+          </div>
+          <div class="card__face card__back">
+            360°
+          </div>
+        </div>
+      </div>
+      
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Area =
+          </div>
+          <div class="card__face card__back">
+            ½ × base × height
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Pythagoras Theorem =
+          </div>
+          <div class="card__face card__back">
+            a² + b² = c²
+          </div>
+        </div>
+      </div>
+    
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Semi-perimeter (s) =
+          </div>
+          <div class="card__face card__back">
+            (a + b + c)/2
+          </div>
+        </div>
+      </div>
+      
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Heron’s formula =
+          </div>
+          <div class="card__face card__back">
+            √[s(s - a)(s - b)(s - c)]
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <br>
+
+    <h2 id = "two">circle properties</h2>
+    <section class="flashcard" style="grid-template-columns: repeat(3, 1fr); width: 98%;">
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Circumference =
+          </div>
+          <div class="card__face card__back">
+            2πr
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Area =
+          </div>
+          <div class="card__face card__back">
+            πr²
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Diameter =
+          </div>
+          <div class="card__face card__back">
+            2r
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Arc length (θ in radians) =
+          </div>
+          <div class="card__face card__back">
+            rθ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Sector area (θ in radians) =
+          </div>
+          <div class="card__face card__back">
+            ½r²θ
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Chord length =
+          </div>
+          <div class="card__face card__back">
+            2r sin(θ/2)
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <br>
+
+    <h2 id = "three">quadrilateral properties</h2>
+    <section class="flashcard" style="grid-template-columns: repeat(3, 1fr); width: 98%;">
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Sum of interior angles =
+          </div>
+          <div class="card__face card__back">
+            360°
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Area of square =
+          </div>
+          <div class="card__face card__back">
+            side²
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Area of rectangle =
+          </div>
+          <div class="card__face card__back">
+            length × breadth
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Area of parallelogram =
+          </div>
+          <div class="card__face card__back">
+            base × height
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Area of rhombus =
+          </div>
+          <div class="card__face card__back">
+            (diagonal₁ × diagonal₂)/2
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 6/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Area of trapezium =
+          </div>
+          <div class="card__face card__back">
+            ½ × (sum of parallel sides) × height
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <br>
+
+    <h2 id = "four">polygon properties</h2>
+    <section class="flashcard" style="grid-template-columns: repeat(4, 1fr); width: 98%;">
+      <div class="card" style="aspect-ratio: 4/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Sum of interior angles =
+          </div>
+          <div class="card__face card__back">
+            (n - 2) × 180°
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 4/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Sum of exterior angles =
+          </div>
+          <div class="card__face card__back">
+            360°
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 4/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Number of diagonals =
+          </div>
+          <div class="card__face card__back">
+            n(n - 3)/2
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 4/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Area of regular polygon =
+          </div>
+          <div class="card__face card__back">
+            (1/2) × Perimeter × Apothem
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <br>
+
+    <section class="flashcard" style="grid-template-columns: repeat(2, 1fr); width: 98%;">
+      <div class="card" style="aspect-ratio: 9/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Measure of one interior angle (regular) =
+          </div>
+          <div class="card__face card__back">
+            [(n - 2) × 180°] / n
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="aspect-ratio: 9/1;">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            Measure of one exterior angle (regular) =
+          </div>
+          <div class="card__face card__back">
+            360° / n
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+
+    <section class="flashcard" style="grid-template-columns: repeat(6, 1fr); width: 98%;">
+      
+    </section>
+    <br>
+
+    <section id="geometry-quiz">
+      <div id="start-game">
+        <button id="start-btn">Start Quiz</button>
+    </div>
+  
+    <div id="in-game" class="hidden quiz-container">
+      <span id="Qno">0</span id="dot"><span>. </span><span id="question"></span>
+      <br>
+      <br>
+        <div id="options">
+            <button class="answer-btn"></button>
+            <button class="answer-btn"></button>
+            <button class="answer-btn"></button>
+            <button class="answer-btn"></button>
+        </div>
+        <p class="jeevan">score: <span id="score">0</span></p>
+
+        <button id="next-question-btn" class="hidden">Next Question</button>
+    </div>
+  
+    <div id="end-game" class="hidden">
+        <p id="final-score"></p>
+    </div>
+    </section>
+    </main>
+    <script id="question-bank" type="application/json">
+      [
+          {
+              "question": "What is the area of a triangle with a base of 10 units and a height of 5 units?",
+              "correctAnswer": "25",
+              "incorrectAnswers": ["15", "20", "30"]
+          },
+          {
+              "question": "What is the circumference of a circle with a radius of 7 units? (Use π = 3.14)",
+              "correctAnswer": "43.96",
+              "incorrectAnswers": ["44.0", "45.0", "42.0"]
+          },
+          {
+              "question": "What is the sum of the interior angles of a quadrilateral?",
+              "correctAnswer": "360°",
+              "incorrectAnswers": ["180°", "270°", "540°"]
+          },
+          {
+              "question": "A regular polygon has 8 sides. What is the measure of each interior angle?",
+              "correctAnswer": "135°",
+              "incorrectAnswers": ["120°", "90°", "150°"]
+          },
+          {
+              "question": "In an equilateral triangle, each angle measures θ. What is the value of θ?",
+              "correctAnswer": "60°",
+              "incorrectAnswers": ["45°", "90°", "120°"]
+          }
+      ]
+  
+    </script>
+
+  </main>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace();
+
+    var cards = document.querySelectorAll('.card');
+
+    cards.forEach(function(card) {
+      card.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (card.classList.contains('card--flipped')) {
+          card.classList.add('card--unflip');
+          setTimeout(function () {
+            card.classList.remove('card--flipped', 'card--unflip');
+          }, 500);
+        } else {
+          card.classList.add("card--flipped");
+        }
+      });
+    });
+  </script>
+  <script src="quiz.js"></script>
+</body>
+</html>
