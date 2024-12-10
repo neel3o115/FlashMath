@@ -17,13 +17,18 @@ function shuffleOptions(options) {
     }
 }
 
+function getRandomQuestions() {
+    const shuffledQuestions = questionBank.sort(() => 0.5 - Math.random());
+    return shuffledQuestions.slice(0, 5);
+}
+
 function nextQuestion() {
-    if (currentQuestionIndex >= questionBank.length) {
+    if (currentQuestionIndex >= 5) {
         endGame();
         return;
     }
 
-    const currentQuestion = questionBank[currentQuestionIndex];
+    const currentQuestion = randomQuestions[currentQuestionIndex];
     questionElem.innerHTML = currentQuestion.question;
 
     const options = [currentQuestion.correctAnswer, ...currentQuestion.incorrectAnswers];
@@ -65,6 +70,7 @@ function endGame() {
 }
 
 document.getElementById("start-btn").addEventListener("click", () => {
+    randomQuestions = getRandomQuestions();
     document.getElementById("start-game").classList.add("hidden");
     document.getElementById("start-btn").classList.add("hidden");
     document.getElementById("in-game").classList.remove("hidden");

@@ -64,11 +64,7 @@
 
   <main class="main-content">
 
-    <header class="header">
-        <h1>FlashMath | trigonometry</h1>
-      </header>
-      <div style="margin-top: 80px;"></div>
-
+    <h1>trigonometry</h1>
     <h2 id = "one">fundamental trigonometric identities</h2>
     <section class="flashcard" style="grid-template-columns: repeat(6, 1fr); width: 98%;">
       <div class="card" style="aspect-ratio: 3/1;">
@@ -650,11 +646,11 @@
       <div id="start-game">
         <button id="start-btn">Start Quiz</button>
     </div>
-  
+    
     <div id="in-game" class="hidden quiz-container">
-      <span id="Qno">0</span id="dot"><span>. </span><span id="question"></span>
-      <br>
-      <br>
+        <span id="Qno">0</span id="dot"><span>. </span><span id="question"></span>
+        <br>
+        <br>
         <div id="options">
             <button class="answer-btn"></button>
             <button class="answer-btn"></button>
@@ -664,42 +660,122 @@
         <p class="jeevan">score: <span id="score">0</span></p>
         <button id="next-question-btn" class="hidden">Next Question</button>
     </div>
-  
+    
     <div id="end-game" class="hidden">
         <p id="final-score"></p>
     </div>
-    </section>
-
+    
     <script id="question-bank" type="application/json">
-      [
+    [
       {
-          "question": "What is \\(\\sin(30^{\\circ})\\)?",
-          "correctAnswer": "\\(\\frac{1}{2}\\)",
-          "incorrectAnswers": ["\\(\\frac{\\sqrt{3}}{2}\\)", "\\(\\frac{\\sqrt{2}}{2}\\)", "1"]
+        "question": "Evaluate \\(\\sin(30^\\circ)\\).",
+        "correctAnswer": "\\(\\frac{1}{2}\\)",
+        "incorrectAnswers": ["\\(1\\)", "\\(\\frac{\\sqrt{3}}{2}\\)", "\\(\\sqrt{2}\\)"]
       },
       {
-          "question": "Find \\(\\cos(45^{\\circ})\\).",
-          "correctAnswer": "\\(\\frac{\\sqrt{2}}{2}\\)",
-          "incorrectAnswers": ["\\(\\frac{1}{2}\\)", "\\(\\frac{\\sqrt{3}}{2}\\)", "1"]
+        "question": "If \\(\\tan(\\theta) = 1\\), what is \\(\\theta\\) in the range \\([0^\\circ, 90^\\circ]\\)?",
+        "correctAnswer": "\\(45^\\circ\\)",
+        "incorrectAnswers": ["\\(30^\\circ\\)", "\\(60^\\circ\\)", "\\(90^\\circ\\)"]
       },
       {
-          "question": "Evaluate \\(\\tan(60^{\\circ})\\).",
-          "correctAnswer": "\\(\\sqrt{3}\\)",
-          "incorrectAnswers": ["1", "2", "\\(\\frac{1}{\\sqrt{3}}\\)"]
+        "question": "Simplify \\(\\sin^2(x) + \\cos^2(x)\\).",
+        "correctAnswer": "\\(1\\)",
+        "incorrectAnswers": ["\\(\\sin(x) + \\cos(x)\\)", "\\(\\sec^2(x)\\)", "\\(\\tan^2(x)\\)"]
       },
       {
-          "question": "What is the value of \\(\\sin(90^{\\circ})\\)?",
-          "correctAnswer": "1",
-          "incorrectAnswers": ["0", "\\(\\frac{1}{2}\\)", "\\(\\frac{\\sqrt{2}}{2}\\)"]
+        "question": "Find the exact value of \\(\\cos(2\\theta)\\) if \\(\\sin(\\theta) = \\frac{3}{5}\\).",
+        "correctAnswer": "\\(-\\frac{7}{25}\\)",
+        "incorrectAnswers": ["\\(\\frac{7}{25}\\)", "\\(-\\frac{12}{25}\\)", "\\(\\frac{12}{25}\\)"]
       },
       {
-          "question": "Find the value of \\(\\tan(45^{\\circ})\\).",
-          "correctAnswer": "1",
-          "incorrectAnswers": ["0", "\\(\\frac{1}{\\sqrt{2}}\\)", "\\(\\sqrt{3}\\)"]
+        "question": "Evaluate \\(\\int \\sin(x) \\cos(x) \\, dx\\).",
+        "correctAnswer": "\\(\\frac{1}{2} \\sin^2(x) + C\\)",
+        "incorrectAnswers": ["\\(-\\cos^2(x) + C\\)", "\\(-\\frac{1}{2} \\cos^2(x) + C\\)", "\\(\\sin^2(x) + C\\)"]
+      },
+      {
+        "question": "Find the period of the function \\(y = \\sin(2x)\\).",
+        "correctAnswer": "\\(\\pi\\)",
+        "incorrectAnswers": ["\\(2\\pi\\)", "\\(\\frac{\\pi}{2}\\)", "\\(4\\pi\\)"]
+      },
+      {
+        "question": "Evaluate \\(\\cos(45^\\circ)\\).",
+        "correctAnswer": "\\(\\frac{\\sqrt{2}}{2}\\)",
+        "incorrectAnswers": ["\\(1\\)", "\\(\\frac{1}{2}\\)", "\\(\\frac{\\sqrt{3}}{2}\\)"]
+      },
+      {
+        "question": "What is the value of \\(\\sin(90^\\circ)\\)?",
+        "correctAnswer": "\\(1\\)",
+        "incorrectAnswers": ["\\(0\\)", "\\(\\frac{1}{2}\\)", "\\(\\frac{\\sqrt{3}}{2}\\)"]
+      },
+      {
+        "question": "Simplify \\(\\tan(x) \\cdot \\cot(x)\\).",
+        "correctAnswer": "\\(1\\)",
+        "incorrectAnswers": ["\\(\\tan(x)\\)", "\\(\\cot(x)\\)", "\\(0\\)"]
+      },
+      {
+        "question": "If \\(\\sin(x) = \\frac{1}{2}\\), what is \\(x\\) in the range \\([0^\\circ, 90^\\circ]\\)?",
+        "correctAnswer": "\\(30^\\circ\\)",
+        "incorrectAnswers": ["\\(45^\\circ\\)", "\\(60^\\circ\\)", "\\(90^\\circ\\)"]
+      },
+      {
+        "question": "Find the value of \\(\\tan(60^\\circ)\\).",
+        "correctAnswer": "\\(\\sqrt{3}\\)",
+        "incorrectAnswers": ["\\(1\\)", "\\(\\frac{1}{2}\\)", "\\(2\\)"]
+      },
+      {
+        "question": "What is the amplitude of the function \\(y = 3 \\sin(x)\\)?",
+        "correctAnswer": "\\(3\\)",
+        "incorrectAnswers": ["\\(1\\)", "\\(2\\)", "\\(4\\)"]
+      },
+      {
+        "question": "Evaluate \\(\\sin(120^\\circ)\\).",
+        "correctAnswer": "\\(\\frac{\\sqrt{3}}{2}\\)",
+        "incorrectAnswers": ["\\(1\\)", "\\(\\frac{1}{2}\\)", "\\(0\\)"]
+      },
+      {
+        "question": "If \\(\\sin(x) = \\frac{1}{2}\\), find \\(\\cos(x)\\) for \\(x = 30^\\circ\\).",
+        "correctAnswer": "\\(\\frac{\\sqrt{3}}{2}\\)",
+        "incorrectAnswers": ["\\(1\\)", "\\(0\\)", "\\(\\frac{1}{2}\\)"]
+      },
+      {
+        "question": "Find the exact value of \\(\\cos(90^\\circ)\\).",
+        "correctAnswer": "\\(0\\)",
+        "incorrectAnswers": ["\\(1\\)", "\\(\\frac{1}{2}\\)", "\\(\\sqrt{2}\\)"]
+      },
+      {
+        "question": "Evaluate \\(\\int \\cos^2(x) \\, dx\\).",
+        "correctAnswer": "\\(\\frac{x}{2} + \\frac{\\sin(2x)}{4} + C\\)",
+        "incorrectAnswers": ["\\(\\sin(x) + C\\)", "\\(\\cos(x) + C\\)", "\\(x + C\\)"]
+      },
+      {
+        "question": "Find the phase shift of the function \\(y = \\sin(x - \\frac{\\pi}{2})\\).",
+        "correctAnswer": "\\(\\frac{\\pi}{2}\\)",
+        "incorrectAnswers": ["\\(\\pi\\)", "\\(0\\)", "\\(\\frac{\\pi}{4}\\)"]
+      },
+      {
+        "question": "What is the value of \\(\\sin(60^\\circ)\\)?",
+        "correctAnswer": "\\(\\frac{\\sqrt{3}}{2}\\)",
+        "incorrectAnswers": ["\\(1\\)", "\\(\\frac{1}{2}\\)", "\\(\\frac{\\sqrt{2}}{2}\\)"]
+      },
+      {
+        "question": "Find the exact value of \\(\\tan(45^\\circ)\\).",
+        "correctAnswer": "\\(1\\)",
+        "incorrectAnswers": ["\\(\\sqrt{2}\\)", "\\(0\\)", "\\(\\frac{1}{2}\\)"]
+      },
+      {
+        "question": "Find the value of \\(\\cos(60^\\circ)\\).",
+        "correctAnswer": "\\(\\frac{1}{2}\\)",
+        "incorrectAnswers": ["\\(1\\)", "\\(\\frac{\\sqrt{3}}{2}\\)", "\\(0\\)"]
+      },
+      {
+        "question": "Evaluate \\(\\sin(45^\\circ)\\).",
+        "correctAnswer": "\\(\\frac{\\sqrt{2}}{2}\\)",
+        "incorrectAnswers": ["\\(1\\)", "\\(\\frac{1}{2}\\)", "\\(\\frac{\\sqrt{3}}{2}\\)"]
       }
-  ]
+    ]
     </script>
     
+        
   </main>
 
   <script src="https://unpkg.com/feather-icons"></script>
